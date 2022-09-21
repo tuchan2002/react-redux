@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-m-plus1 text-base text-white;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-lg font-bold;
+  }
+  h5 {
+    @apply text-sm font-bold;
+  }
+}
+
+@layer components {
+  .common-style-input {
+    @apply w-full p-2 border text-black rounded-sm outline-none;
+  }
+  .common-style-button {
+    @apply self-end w-fit border-2 border-white p-2 rounded-lg font-bold uppercase;
+  }
+}
